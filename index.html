@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enggar Sila Majid</title>
+
+    <!-- Link CSS -->
+    <link href="./style/style.css" rel="stylesheet" />
+
+    <!-- Link Style Font dari Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="title-name">
+                <h1><a href="#home">enggarsilamajid</a></h1>
+            </div>
+            <div class="navbar-list">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a>PROJECTS</a></li>
+                    <li><a>ARTICLES</a></li>
+                    <li><a>CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- Dropdown Start -->
+            <div id="nav-mobile">
+                <div class="dropdown-button">
+                    <button onclick="myFunction(event)" class="dropdown-btn"><i class="fa fa-list"></i></button>
+                    <div id="dropdown-list" class="dropdown-content">
+                        <a href="#about">ABOUT</a>
+                        <a>PROJECTS</a>
+                        <a>ARTICLES</a>
+                        <a>CONTACT</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown End -->
+        </nav>
+    </header>
+    <main>
+        <!-- section home start -->
+        <section class="home" id="home">
+            <div class="home-article">
+                <article class="greetings">
+                    <p><label>Welcome, readers!!!
+                            <br>
+                            I am very grateful that you came to visit this website.
+                            <br>
+                            Please don't hesitate to find out
+                            <br>
+                            <a href="#about">more about enggarsilamajid</a>
+                        </label></p>
+                </article>
+            </div>
+            <div class="home-image">
+                <img src="./image/profil1.jpg" />
+            </div>
+        </section>
+        <!-- section about start -->
+        <section class="about" id="about">
+            <div class="about-image">
+                <aside>
+                    <img src="./image/about.jpg" />
+                    <p><label><span>|</span> <a>Enggar Sila Majid</a> <span>|</span> <a>Tech Enthusiast</a>
+                            <span>|</span>
+                            <br>
+                            <span>|</span> <a>Magelang</a> <span>|</span> <a>Indonesia</a> <span>|</span>
+                        </label>
+                    </p>
+                </aside>
+            </div>
+            <div class="about-article">
+                <article>
+                    <p>
+                        I introduce myself as a technology enthusiast. This started when I entered a vocational high
+                        school to study computer and network engineering.
+                        <br>
+                        <br>
+                        There I first made a program on a computer, a
+                        simple website using the notepad. I also learned about computer networks, such as hardware
+                        installation and IP
+                        addressing.
+                        <br>
+                        <br>
+                        After graduating from vocational high school, I continued my studies majoring in electrical
+                        engineering at a university in Magelang. I studied things about electricity, did final project
+                        research on electric motors, and worked part time as an installer for the use of low voltage
+                        electrical energy.
+                        <br>
+                        <br>
+                        Since 2023 until now, I have returned to studying software technology developments, especially
+                        web development. This website is one of the websites that I am trying to develop based on the
+                        knowledge I have gained.
+                        <br>
+                        <br>
+                        <span><a>Read full resume</a></span>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- section home end -->
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="find-me">
+                <div class="label">
+                    <label>Find me on:</label>
+                </div>
+                <div class="profile-link">
+                    <label><a href="https://www.instagram.com/enggarsilamajid/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/enggarsilamajid" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/enggar-sila-majid-236398176/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a></label>
+                </div>
+            </div>
+            <div class="footer-label">
+                <label>&copy; enggarsilamajid<br>
+                    2024</label>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function myFunction(event) {
+            const dropdownList = document.getElementById("dropdown-list");
+            if (dropdownList.style.right === '0px') {
+                dropdownList.style.right = '-250px'; // Menyembunyikan dropdown
+            } else {
+                dropdownList.style.display = 'block'; // Tampilkan dropdown
+                setTimeout(() => {
+                    dropdownList.style.right = '0'; // Animasi transisi
+                }, 0);
+            }
+
+            // Mencegah event click di tombol mengalihkan ke window.onclick
+            event.stopPropagation();
+        }
+
+        // Menutup dropdown ketika mengklik di luar
+        window.onclick = function (event) {
+            const dropdown = document.getElementById("dropdown-list");
+            if (dropdown.style.right === '0px' && !event.target.matches('.dropdown-btn')) {
+                dropdown.style.right = '-250px'; // Menyembunyikan dropdown
+                setTimeout(() => {
+                    dropdown.style.display = 'none'; // Sembunyikan sepenuhnya setelah animasi
+                }, 50); // Sesuaikan waktu sesuai dengan durasi transisi
+            }
+        };
+    </script>
+</body>
+
+</html>
