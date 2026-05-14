@@ -317,18 +317,20 @@ footer {
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+
     background-color: #EEEEEE;
     z-index: 1000;
-    right: -250px;
-    top: 0;
-    height: 100vh;
-    transition: right .5s ease;
-    -webkit-transition: right .5s ease;
-    -moz-transition: right .5s ease;
-    -ms-transition: right .5s ease;
-    -o-transition: right .5s ease;
+
+    transition: right 0.3s ease;
 }
 
 .dropdown-content a {
@@ -629,3 +631,9 @@ footer {
     }
 }
 
+
+
+
+.dropdown-content.show {
+  right: 0;
+}
