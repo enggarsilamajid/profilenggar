@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enggar Sila Majid</title>
 
-    <!-- Link CSS -->
-    <link href="./style/style.css" rel="stylesheet" />
-
     <!-- Link Style Font dari Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +18,8 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
+<script type="module" src="/src/js/main.js"></script>
 
 <body>
     <header>
@@ -67,14 +66,14 @@
                 </article>
             </div>
             <div class="home-image">
-                <img src="./image/profil1.jpg" />
+                <img src="/images/profil1.jpg" />
             </div>
         </section>
         <!-- section about start -->
         <section class="about" id="about">
             <div class="about-image">
                 <aside>
-                    <img src="./image/about.jpg" />
+                    <img src="/images/about.jpg" />
                     <p><label><span>|</span> <a>Enggar Sila Majid</a> <span>|</span> <a>Tech Enthusiast</a>
                             <span>|</span>
                             <br>
@@ -133,33 +132,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        function myFunction(event) {
-            const dropdownList = document.getElementById("dropdown-list");
-            if (dropdownList.style.right === '0px') {
-                dropdownList.style.right = '-250px'; // Menyembunyikan dropdown
-            } else {
-                dropdownList.style.display = 'block'; // Tampilkan dropdown
-                setTimeout(() => {
-                    dropdownList.style.right = '0'; // Animasi transisi
-                }, 0);
-            }
-
-            // Mencegah event click di tombol mengalihkan ke window.onclick
-            event.stopPropagation();
-        }
-
-        // Menutup dropdown ketika mengklik di luar
-        window.onclick = function (event) {
-            const dropdown = document.getElementById("dropdown-list");
-            if (dropdown.style.right === '0px' && !event.target.matches('.dropdown-btn')) {
-                dropdown.style.right = '-250px'; // Menyembunyikan dropdown
-                setTimeout(() => {
-                    dropdown.style.display = 'none'; // Sembunyikan sepenuhnya setelah animasi
-                }, 50); // Sesuaikan waktu sesuai dengan durasi transisi
-            }
-        };
-    </script>
 </body>
 
 </html>
