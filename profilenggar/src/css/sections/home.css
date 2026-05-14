@@ -194,17 +194,17 @@
     }
 
     .hero-content {
-    text-align: center;
-}
+        text-align: center;
+    }
 
-.hero-actions {
-    justify-content: center;
-    flex-wrap: wrap;
-}
+    .hero-actions {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-.hero-socials {
-    justify-content: center;
-}
+    .hero-socials {
+      justify-content: center;
+    }
 }
 
 @media screen and (max-width: 550px) {
