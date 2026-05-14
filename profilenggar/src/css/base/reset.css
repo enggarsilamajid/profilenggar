@@ -38,3 +38,8 @@ body {
 
     overflow-x: hidden;
 }
+
+.container {
+    width: min(1120px, 100% - 2rem);
+    margin-inline: auto;
+}
