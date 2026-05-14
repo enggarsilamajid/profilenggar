@@ -2,188 +2,363 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
     <title>Enggar Sila Majid</title>
 
-    <!-- Link Style Font dari Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    />
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    />
+
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    />
 
-    <!-- Link Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 
-<script type="module" src="/src/js/main.js"></script>
+    <!-- Main JS -->
+    <script
+        type="module"
+        src="/src/js/main.js"
+    ></script>
+</head>
 
 <body>
     <header>
         <nav class="navbar">
+            <!-- LOGO -->
             <div class="title-name">
-                <h1><a href="https://www.dicoding.com/users/enggarsm39/academies">enggarsilamajid</a></h1>
+                <h1>
+                    <a
+                        href="https://www.dicoding.com/users/enggarsm39/academies"
+                        target="_blank"
+                    >
+                        enggarsilamajid
+                    </a>
+                </h1>
             </div>
+
+            <!-- DESKTOP NAV -->
             <div class="navbar-list">
                 <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a>PROJECTS</a></li>
-                    <li><a>ARTICLES</a></li>
-                    <li><a>CONTACT</a></li>
+                    <li>
+                        <a
+                            href="#home"
+                            class="nav-link active"
+                        >
+                            HOME
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#about"
+                            class="nav-link"
+                        >
+                            ABOUT
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#projects"
+                            class="nav-link"
+                        >
+                            PROJECTS
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#contact"
+                            class="nav-link"
+                        >
+                            CONTACT
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <!-- Dropdown Start -->
+
+            <!-- MOBILE NAV -->
             <div id="nav-mobile">
                 <div class="dropdown-button">
-                    <button class="dropdown-btn"><i class="fa fa-list"></i></button>
-                    <div id="dropdown-list" class="dropdown-content">
-                        <a href="#about">ABOUT</a>
-                        <a>PROJECTS</a>
-                        <a>ARTICLES</a>
-                        <a>CONTACT</a>
+                    <button
+                        class="dropdown-btn"
+                        aria-label="Toggle navigation menu"
+                    >
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <div
+                        id="dropdown-list"
+                        class="dropdown-content"
+                    >
+                        <a
+                            href="#home"
+                            class="nav-link"
+                        >
+                            HOME
+                        </a>
+
+                        <a
+                            href="#about"
+                            class="nav-link"
+                        >
+                            ABOUT
+                        </a>
+
+                        <a
+                            href="#projects"
+                            class="nav-link"
+                        >
+                            PROJECTS
+                        </a>
+
+                        <a
+                            href="#contact"
+                            class="nav-link"
+                        >
+                            CONTACT
+                        </a>
                     </div>
                 </div>
             </div>
-            <!-- Dropdown End -->
         </nav>
     </header>
+
     <main>
-        <!-- section home start -->
-        <section class="home" id="home">
+        <!-- HOME -->
+        <section
+            class="home"
+            id="home"
+        >
             <div class="container home-container">
-            <div class="home-article">
-    <article class="hero-content">
-        <span class="hero-intro">
-            Front-End Web Developer
-        </span>
+                <div class="home-article">
+                    <article class="hero-content">
+                        <span class="hero-intro">
+                            Front-End Web Developer
+                        </span>
 
-        <h1>
-            Building clean and responsive web experiences.
-        </h1>
+                        <h1>
+                            Building clean and responsive web experiences.
+                        </h1>
 
-        <p>
-            I create modern and maintainable websites focused on
-            responsive layouts, clean user interfaces, and better
-            user experiences.
-        </p>
+                        <p>
+                            I create modern and maintainable websites focused on
+                            responsive layouts, clean user interfaces, and
+                            better user experiences.
+                        </p>
 
-        <div class="hero-actions">
-            <a href="#projects" class="primary-btn">
-                View Projects
-            </a>
+                        <div class="hero-actions">
+                            <a
+                                href="#projects"
+                                class="primary-btn"
+                            >
+                                View Projects
+                            </a>
 
-            <a href="#about" class="secondary-btn">
-                About Me
-            </a>
-        </div>
+                            <a
+                                href="#about"
+                                class="secondary-btn"
+                            >
+                                About Me
+                            </a>
+                        </div>
 
-        <div class="hero-socials">
-            <a
-                href="https://github.com/enggarsilamajid"
-                target="_blank"
-            >
-                <i class="fab fa-github"></i>
-            </a>
+                        <div class="hero-socials">
+                            <a
+                                href="https://github.com/enggarsilamajid"
+                                target="_blank"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
 
-            <a
-                href="https://www.linkedin.com/in/enggar-sila-majid-236398176/"
-                target="_blank"
-            >
-                <i class="fab fa-linkedin"></i>
-            </a>
+                            <a
+                                href="https://www.linkedin.com/in/enggar-sila-majid-236398176/"
+                                target="_blank"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
 
-            <a
-                href="https://www.instagram.com/enggarsilamajid/"
-                target="_blank"
-            >
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-    </article>
-</div>
-            <div class="home-image">
-                <img src="/images/profil1.jpg" />
-            </div>
+                            <a
+                                href="https://www.instagram.com/enggarsilamajid/"
+                                target="_blank"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="home-image">
+                    <img
+                        src="/images/profil1.jpg"
+                        alt="Enggar Sila Majid"
+                    />
+                </div>
             </div>
         </section>
-        <!-- section home end -->
-        <!-- section about start -->
-        <section class="about" id="about">
+
+        <!-- ABOUT -->
+        <section
+            class="about"
+            id="about"
+        >
             <div class="container about-container">
-            <div class="about-image">
-                <aside>
-                    <img src="/images/about.jpg" />
-                    <p><label><span>|</span> <a>Enggar Sila Majid</a> <span>|</span> <a>Tech Enthusiast</a>
-                            <span>|</span>
-                            <br>
-                            <span>|</span> <a>Magelang</a> <span>|</span> <a>Indonesia</a> <span>|</span>
-                        </label>
-                    </p>
-                </aside>
-            </div>
-            <div class="about-article">
-                <article>
-                    <p>
-                        I introduce myself as a technology enthusiast. This started when I entered a vocational high
-                        school to study computer and network engineering.
-                        <br>
-                        <br>
-                        There I first made a program on a computer, a
-                        simple website using the notepad. I also learned about computer networks, such as hardware
-                        installation and IP
-                        addressing.
-                        <br>
-                        <br>
-                        After graduating from vocational high school, I continued my studies majoring in electrical
-                        engineering at a university in Magelang. I studied things about electricity, did final project
-                        research on electric motors, and worked part time as an installer for the use of low voltage
-                        electrical energy.
-                        <br>
-                        <br>
-                        Since 2023 until now, I have returned to studying software technology developments, especially
-                        web development. This website is one of the websites that I am trying to develop based on the
-                        knowledge I have gained.
-                        <br>
-                        <br>
-                        <span><a>Read full resume</a></span>
-                    </p>
-                </article>
-            </div>
+                <div class="about-image">
+                    <aside>
+                        <img
+                            src="/images/about.jpg"
+                            alt="About Enggar"
+                        />
+
+                        <p>
+                            <label>
+                                <span>|</span>
+                                <a>Enggar Sila Majid</a>
+                                <span>|</span>
+
+                                <a>Tech Enthusiast</a>
+
+                                <span>|</span>
+
+                                <br />
+
+                                <span>|</span>
+
+                                <a>Magelang</a>
+
+                                <span>|</span>
+
+                                <a>Indonesia</a>
+
+                                <span>|</span>
+                            </label>
+                        </p>
+                    </aside>
+                </div>
+
+                <div class="about-article">
+                    <article>
+                        <p>
+                            I introduce myself as a technology enthusiast. This
+                            started when I entered a vocational high school to
+                            study computer and network engineering.
+
+                            <br />
+                            <br />
+
+                            There I first made a program on a computer, a simple
+                            website using the notepad. I also learned about
+                            computer networks, such as hardware installation and
+                            IP addressing.
+
+                            <br />
+                            <br />
+
+                            After graduating from vocational high school, I
+                            continued my studies majoring in electrical
+                            engineering at a university in Magelang.
+
+                            <br />
+                            <br />
+
+                            Since 2023 until now, I have returned to studying
+                            software technology developments, especially web
+                            development.
+
+                            <br />
+                            <br />
+
+                            <span>
+                                <a>
+                                    Read full resume
+                                </a>
+                            </span>
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
-        <!-- section home end -->
-        <!-- section projects start -->
-        <section class="projects" id="projects">
-    <div class="container">
-        <div class="section-heading">
-            <span>Portfolio</span>
-            <h2>Selected Projects</h2>
-        </div>
 
-        <div class="projects-grid" id="projects-grid"></div>
-    </div>
-</section>
-<!-- section projects end-->
+        <!-- PROJECTS -->
+        <section
+            class="projects"
+            id="projects"
+        >
+            <div class="container">
+                <div class="section-heading">
+                    <span>Portfolio</span>
+
+                    <h2>Selected Projects</h2>
+                </div>
+
+                <div
+                    class="projects-grid"
+                    id="projects-grid"
+                ></div>
+            </div>
+        </section>
     </main>
-    <footer>
+
+    <footer id="contact">
         <div class="footer-content">
             <div class="find-me">
                 <div class="label">
                     <label>Find me on:</label>
                 </div>
+
                 <div class="profile-link">
-                    <label><a href="https://www.instagram.com/enggarsilamajid/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/enggarsilamajid" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/enggar-sila-majid-236398176/" target="_blank"><i
-                                class="fab fa-linkedin"></i></a></label>
+                    <a
+                        href="https://www.instagram.com/enggarsilamajid/"
+                        target="_blank"
+                    >
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/enggarsilamajid"
+                        target="_blank"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/enggar-sila-majid-236398176/"
+                        target="_blank"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
+
             <div class="footer-label">
-                <label>&copy; enggarsilamajid<br>
-                    2024</label>
+                <label>
+                    &copy; enggarsilamajid
+                    <br />
+                    2026
+                </label>
             </div>
         </div>
     </footer>

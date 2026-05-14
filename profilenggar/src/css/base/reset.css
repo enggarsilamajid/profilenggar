@@ -21,8 +21,12 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    scroll-padding-top: 0px;
     scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
