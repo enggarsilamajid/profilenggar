@@ -3,8 +3,8 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    background-color: #111;
-    color: #EEEEEE;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text);
 }
 
 .find-me {
@@ -20,17 +20,13 @@ footer {
 
 .profile-link a {
     text-decoration: none;
-    color: #EEEEEE;
+    color: var(--color-text);
     margin: 0 .2rem;
-    transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
+    transition: all var(--transition-default);
 }
 
 .profile-link a:hover {
-    color: #64DFDF;
+    color: var(--color-primary);
 }
 
 /* media screen max450px*/
