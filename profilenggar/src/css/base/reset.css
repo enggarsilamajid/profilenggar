@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-padding-top: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM sans', sans-serif;
+    background-color: #252525;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+}
