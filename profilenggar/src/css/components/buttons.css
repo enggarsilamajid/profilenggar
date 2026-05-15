@@ -1,0 +1,40 @@
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.9rem 1.5rem;
+
+    border-radius: 0.9rem;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: all var(--transition-default);
+}
+
+.primary-btn {
+    background-color: var(--color-primary);
+
+    color: #111111;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+
+    opacity: 0.9;
+}
+
+.secondary-btn {
+    border: 1px solid rgba(255,255,255,0.12);
+
+    color: var(--color-text);
+}
+
+.secondary-btn:hover {
+    border-color: var(--color-primary);
+
+    color: #111111;
+}

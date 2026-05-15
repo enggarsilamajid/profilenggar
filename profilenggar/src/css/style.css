@@ -6,3 +6,6 @@
 @import './sections/home.css';
 @import './sections/about.css';
 @import './sections/projects.css';
+@import './sections/contact.css';
+
+@import './components/buttons.css';
