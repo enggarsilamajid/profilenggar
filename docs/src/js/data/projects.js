@@ -8,7 +8,7 @@ const projects = [
 
     tech: ['HTML', 'CSS', 'JavaScript', 'Vite'],
 
-    github: 'https://github.com/enggarsilamajid',
+    github: 'https://github.com/enggarsilamajid/prebuild-storyapp.git',
 
     demo: 'https://enggarsilamajid.github.io/storyapp-by-enggar/',
   },
@@ -22,7 +22,7 @@ const projects = [
 
     tech: ['TensorFlow', 'JavaScript', 'Web API'],
 
-    github: 'https://github.com/enggarsilamajid',
+    github: 'https://github.com/enggarsilamajid/prebuild-root-facts.git',
 
     demo: 'https://idyllic-beignet-acb64e.netlify.app/',
   },
