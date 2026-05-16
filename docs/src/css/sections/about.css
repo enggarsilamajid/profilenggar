@@ -2,7 +2,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem 0;
 }
 
 .about-container {
@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 5rem;
+    padding: 0 2rem;
 }
 
 .about-image {
