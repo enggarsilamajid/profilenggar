@@ -4,13 +4,13 @@ const projects = [
     description:
       'Responsive story sharing web application with authentication, maps integration, and progressive web app support.',
 
-    image: '/images/profil1.jpg',
+    image: '/images/storyApp.jpg',
 
     tech: ['HTML', 'CSS', 'JavaScript', 'Vite'],
 
     github: 'https://github.com/enggarsilamajid',
 
-    demo: '#',
+    demo: 'https://enggarsilamajid.github.io/storyapp-by-enggar/',
   },
 
   {
@@ -18,16 +18,16 @@ const projects = [
     description:
       'Machine learning powered web application for vegetable image classification with interactive prediction results.',
 
-    image: '/images/about.jpg',
+    image: '/images/vegClassApp.jpg',
 
     tech: ['TensorFlow', 'JavaScript', 'Web API'],
 
     github: 'https://github.com/enggarsilamajid',
 
-    demo: '#',
+    demo: 'https://idyllic-beignet-acb64e.netlify.app/',
   },
 
-  {
+  /* {
     title: 'Personal Portfolio Website',
     description:
       'Modern responsive personal portfolio website built with modular architecture and reusable components.',
@@ -39,7 +39,7 @@ const projects = [
     github: 'https://github.com/enggarsilamajid',
 
     demo: '#',
-  },
+  }, */
 ];
 
 export default projects;
