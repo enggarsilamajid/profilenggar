@@ -163,14 +163,14 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
 
-    border: 10px solid var(--color-text);
+    /* border: 10px solid var(--color-text);
 
     box-shadow: var(--shadow-primary);
 
     transform: rotate(-5deg);
 
     transition:
-        transform var(--transition-default);
+        transform var(--transition-default); */
 }
 
 .home-image img:hover {
